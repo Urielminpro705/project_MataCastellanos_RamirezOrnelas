@@ -2,6 +2,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--secundario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -11,6 +14,90 @@ h1 {
 }
 
 .nombre_usuario {
-    background-color: red;
     margin: 0;
+    margin-top: 50px;
+    color: var(--notas);
+    display: inline-block;
+    padding: 10px;
+}
+
+.cont-notas_usuario {
+    width: 90%;
+}
+
+.cont-notas_usuario ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+
+.card-notas {
+    height: 250px;
+    width: 310px;
+    background-color: var(--notas);
+    padding: 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--terciario);
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-notas::after {
+    content: "";
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    background-color: red;
+    background: linear-gradient(to top, var(--notas),var(--notas), transparent);
+    bottom: 0;
+    left: 0;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.card-notas p {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.card-notas:hover {
+    transform: rotate(-3deg);
+}
+
+.agregar-btn {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: 2px solid var(--notas);
+    background-color: var(--secundario);
+    color: var(--notas);
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 30px;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.agregar-btn:hover {
+    background-color: var(--notas);
+    color: var(--secundario);
 }

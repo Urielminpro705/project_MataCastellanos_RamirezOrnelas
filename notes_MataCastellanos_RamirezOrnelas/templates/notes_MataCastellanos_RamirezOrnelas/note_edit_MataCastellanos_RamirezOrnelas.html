@@ -14,7 +14,11 @@
         <label for="usuarios">Selecciona un usuario</label>
         <select name="usuarios" id="usuarios">
             {% for usuario in Lista_usuarios %}
-                <option value="{{ usuario.id }}">{{usuario.get_full_name}}</option>
+                {% if Nota.user == usuario %}
+                    <option value="{{ usuario.id }}" selected>{{usuario.get_full_name}}</option>
+                {% else %}
+                    <option value="{{ usuario.id }}">{{usuario.get_full_name}}</option>
+                {% endif %}
             {% endfor %}
         </select>
         <label for="titulo">Nombre de la nota</label>

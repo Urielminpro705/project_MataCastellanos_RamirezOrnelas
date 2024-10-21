@@ -54,4 +54,4 @@ def Edicion_notas(request, id):
 def Eliminacion_notas(request, id):
     nota = get_object_or_404(Note, pk=id)
     nota.delete()
-    return HttpResponse("La nota se eliminó con exito")
+    return redirect("notes_MataCastellanos_RamirezOrnelas:Lista")

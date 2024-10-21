@@ -1,0 +1,77 @@
+body {
+    background-color: var(--secundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    gap: 10px;
+}
+
+.cont-nota {
+    width: 70%;
+    height: 70%;
+    background-color: var(--notas);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cont-nota p {
+    margin: 0;
+    /* margin-top: 10px; */
+    margin-left: 5px;
+    font-size: 1rem;
+    color: var(--terciario);
+    white-space: normal;
+    overflow: hidden;
+}
+
+.cont-nota p span {
+    color: var(--secundario);
+    font-weight: bold;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    color:  var(--secundario);
+    margin-bottom: 5px;
+}
+
+.cont-nota .txt-contenido {
+    margin-top: 20px;
+    color: var(--secundario);
+}
+
+.cont-opciones {
+    width: 200px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cont-opciones a {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--secundario);
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--notas);
+    border: 2px solid var(--notas);
+    font-weight: bold;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.cont-opciones a:hover {
+    background-color: var(--notas);
+    color: var(--secundario);
+}
