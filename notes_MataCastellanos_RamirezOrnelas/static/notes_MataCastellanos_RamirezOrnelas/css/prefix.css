@@ -1,0 +1,10 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primario: rgb(255, 255, 255);
+    --secundario: #11131b;
+    --terciario: rgb(73, 73, 73);
+    --notas: #fee9aa;
+}

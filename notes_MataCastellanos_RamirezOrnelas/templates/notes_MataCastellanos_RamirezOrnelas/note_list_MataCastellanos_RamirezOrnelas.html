@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- {% load static %} -->
+    <!-- <link rel="stylesheet" href="{% static "notes_MataCastellanos_RamirezOrnelas/css/prefix.css" %}"> -->
+    <!-- <link rel="stylesheet" href="{% static "notes_MataCastellanos_RamirezOrnelas/css/list.css" %}"> -->
+    <link rel="stylesheet" href="/notes_MataCastellanos_RamirezOrnelas/static/notes_MataCastellanos_RamirezOrnelas/css/prefix.css">
+    <link rel="stylesheet" href="/notes_MataCastellanos_RamirezOrnelas/static/notes_MataCastellanos_RamirezOrnelas/css/list.css">
+    <title>Lista</title>
+</head>
+<body>
+    <!-- {% regroup Lista_notas by user as notas_usuario %} -->
+    <!-- {% for grupo in notas_usuario %} -->
+        <h1>Todas las notas</h1>
+        <div class="cont-notas_usuario">
+            <!-- <h2>{{ grupo.grouper.get_full_name }}</h2>    -->
+            <h2 class="nombre_usuario">Uriel Mata</h2>   
+            <ul>
+                <!-- {% for nota in grupo.list %} -->
+                    <!-- <li>{{ nota.title }}</li> -->
+                    <li>
+                        <a href="#">
+                            
+                        </a>
+                    </li>
+                <!-- {% endfor %} -->
+            </ul>
+        </div>
+    <!-- {% endfor %} -->
+</body>
+</html>

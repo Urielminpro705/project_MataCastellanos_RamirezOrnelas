@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--secundario);
+}
+
+h1 {
+    color: var(--notas);
+    width: 100%;
+    text-align: center;
+}
+
+.nombre_usuario {
+    background-color: red;
+    margin: 0;
+}
