@@ -19,7 +19,7 @@ body {
     display: flex;
     align-items: start;
     flex-direction: column;
-    box-shadow: 5px 5px 0px 0 #9c8b58;
+    /* box-shadow: 5px 5px 0px 0 #9c8b58; */
 }
 
 .form label {
@@ -33,12 +33,11 @@ body {
     width: 100%;
     height: 30px;
     border-radius: 5px;
-    border: 0;
     margin-bottom: 20px;
     padding-inline: 10px;
     box-sizing: border-box;
-    background-color: var(--primario);
-    border: 2px solid var(--notas_sombra);
+    background-color: var(--notas_sombra);
+    border: none;
 }
 
 .form textarea {
@@ -49,8 +48,7 @@ body {
     resize: none;
     padding: 10px;
     box-sizing: border-box;
-    border: 2px solid var(--notas_sombra);
-    background-color: var(--primario);
+    background-color: var(--notas_sombra);
 }
 
 .from input:focus {
@@ -65,7 +63,7 @@ select {
     box-sizing: border-box;
     margin-bottom: 20px;
     border: none;
-    border: 2px solid var(--notas_sombra);
+    background-color: var(--notas_sombra);
 }
 
 .form button {

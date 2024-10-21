@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 
 # Create your views here.
 def Lista_notas(request):
-    lista_notas = Note.objects.all()
+    lista_notas = Note.objects.select_related("user").all().order_by("user__id")
     context = {"Lista_notas":lista_notas}
     return render(request, "notes_MataCastellanos_RamirezOrnelas/note_list_MataCastellanos_RamirezOrnelas.html", context)
 
