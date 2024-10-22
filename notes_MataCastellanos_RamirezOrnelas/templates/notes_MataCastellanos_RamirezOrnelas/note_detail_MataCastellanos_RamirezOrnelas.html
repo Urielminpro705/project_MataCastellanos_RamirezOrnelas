@@ -9,22 +9,24 @@
     <title>Detalles</title>
 </head>
 <body>
-    <div class="cont-nota">
-        <h1>{{ Nota.title }}</h1>
-        <p><span>Fecha:</span> {{ Nota.creation_date }}</p>
-        <p><span>De:</span> {{ Nota.user.get_full_name }}</p>
-        <p class="txt-contenido">{{ Nota.content }}</p>
-    </div>
-    <div class="cont-opciones">
-        <a href="{% url "notes_MataCastellanos_RamirezOrnelas:Lista" %}">
-            Lista de notas
-        </a>
-        <a href="{% url "notes_MataCastellanos_RamirezOrnelas:Edicion" Nota.id %}">
-            Editar
-        </a>
-        <a href="{% url "notes_MataCastellanos_RamirezOrnelas:Eliminacion" Nota.id %}">
-            Eliminar
-        </a>
+    <div class="cont-todo">
+        <div class="cont-nota">
+            <h1>{{ Nota.title }}</h1>
+            <p><span>Fecha:</span> {{ Nota.creation_date }}</p>
+            <p><span>De:</span> {{ Nota.user.get_full_name }}</p>
+            <p class="txt-contenido">{{ Nota.content }}</p>
+        </div>
+        <div class="cont-opciones">
+            <a href="{% url "notes_MataCastellanos_RamirezOrnelas:Lista" %}">
+                Lista de notas
+            </a>
+            <a href="{% url "notes_MataCastellanos_RamirezOrnelas:Edicion" Nota.id %}">
+                Editar
+            </a>
+            <a href="{% url "notes_MataCastellanos_RamirezOrnelas:Eliminacion" Nota.id %}">
+                Eliminar
+            </a>
+        </div>
     </div>
 </body>
 </html>
